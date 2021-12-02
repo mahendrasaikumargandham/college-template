@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    display: block;
+    background-color: #0c002b;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+    position: absolute;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 15%;
+    border-radius: 20px;
+    background: rgb(0, 78, 189);
+    width: 70%;
+}
+
+.title {
+    font-size: 20px;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 20px;
+}
+
+button {
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: transparent;
+    color: #fff;
+    margin-bottom: 20px;
+    border: none;
+}
+
+button:hover {
+    border: 2px solid #fff;
+    border-radius: 20px;
+    background-color: 0c002b;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.content h3 {
+    margin-left: 100px;
+}
+
+.txt {
+    width: 400px;
+    height: 30px;
+    margin-left: 30px;
+    border: none;
+    background-color: #0c002b;
+    border-radius: 20px;
+    color: #fff;
+    padding: 7px 15px;
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        height:60%;
+        margin-top: 100px;
+        margin-left: 15px;
+        width: 90%;
+    }
+
+    .title {
+        font-size: 15px;
+    }
+    .content {
+        flex-direction: column;
+        margin-left: 10px;
+    }
+
+    .content h3 {
+        margin-left: 0;
+    }
+
+    .txt {
+        margin-left: 10px;
+        max-width: 80%;
+    }
+
+    button {
+        margin-top: 50px;
+        border: 2px solid #fff;
+        border-radius: 20px;
+    }
+}
