@@ -1,0 +1,33 @@
+img {
+    width: 50px;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 2px solid #0c002b;
+}
+
+select {
+    position: relative;
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    color: #222;
+    text-align: center;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    padding: 10px 10px;
+    background-color: rgb(0, 89, 178);
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+}

@@ -8,14 +8,20 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 .container {
-    position: absolute;
+    position: relative;
     text-align: center;
     margin-top: 10%;
-    margin-left: 15%;
+    margin-left: 10px;
     border-radius: 20px;
     background: rgb(0, 78, 189);
-    width: 70%;
+    width: 45%;
 }
 
 .title {
@@ -24,6 +30,10 @@ body {
     margin-bottom: 20px;
 }
 
+img {
+    position: absolute;
+    margin-left: 35%;
+}
 button {
     margin-top: 20px;
     width: 200px;
@@ -38,7 +48,7 @@ button {
 
 button:hover {
     border: 2px solid #fff;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: 0c002b;
 }
 
@@ -49,21 +59,19 @@ button:hover {
 }
 
 .content h3 {
-    margin-left: 100px;
+    margin-left: 20px;
 }
 
 .txt {
     width: 400px;
     height: 30px;
     margin-left: 30px;
-    border: none;
     background-color: #f5f5f5;
     border-radius: 10px;
-    color: #fff;
+    color: #222;
     padding: 7px 15px;
     font-size: 20px;
     outline: none;
-    color: #222;
 }
 
 @media (max-width: 768px) {
