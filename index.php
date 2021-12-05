@@ -29,10 +29,10 @@
 </head>
 <body>
    <div class="index">
-    <a href="loginpage.html">Login Page</a>
-    <a href="marks_details.html">Marks Details</a>
-    <a href="student_data.html">Student Data</a>
-    <a href="details_fetch.html"> Fetch Details</a>
+    <a href="loginpage.php">Login Page</a>
+    <a href="marks_details.php">Marks Details</a>
+    <a href="student_data.php">Student Data</a>
+    <a href="details_fetch.php"> Fetch Details</a>
    </div>
 
 </body>
