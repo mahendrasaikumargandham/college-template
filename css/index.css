@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+        body {
+            align-items: center;
+            justify-content: center;
+            display: block;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        .index {
+            text-align: center;
+            margin-top: 17%;
+            /* display: flex; */
+            flex-direction: column;
+        }
+        .index a {
+            text-decoration: none;
+            margin: 10px;
+            font-size: 20px;
+        }
