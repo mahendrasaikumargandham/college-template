@@ -1,39 +1,37 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css" />
     <title>Document</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
-        body {
-            align-items: center;
-            justify-content: center;
-            display: block;
-            font-family: 'Ubuntu', sans-serif;
-        }
-        .index {
-            text-align: center;
-            margin-top: 17%;
-            display: flex;
-            flex-direction: column;
-        }
-        .index a {
-            text-decoration: none;
-            margin: 10px;
-            font-size: 20px;
-        }
-
-    </style>
 </head>
 <body>
-   <div class="index">
-    <a href="loginpage.php">Login Page</a>
-    <a href="marks_details.php">Marks Details</a>
-    <a href="student_data.php">Student Data</a>
-    <a href="details_fetch.php"> Fetch Details</a>
-   </div>
-
+    <?php
+        $chooseErr = "";
+        $choose = "";
+    ?>
+    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+        <div class="index">
+            <button name='loginPage' value='loginPage'>Login Page</button>
+            <button name='marksDetails' value='marksDetails'>Marks Details</button>
+            <button name='studentData' value='studenData'>Student Data</button>
+            <button name='detailsFetch' value='detailsFetch'>Fetch Details</button>
+        </div>
+        <?php 
+            if (isset($_POST['loginPage'])) {
+                header("Location: loginpage.php");
+            }
+            if (isset($_POST['marksDetails'])) {
+                header("Location: marks_details.php");
+            }
+            if (isset($_POST['studentData'])) {
+                header("Location: student_data.php");
+            }
+            if (isset($_POST['detailsFetch'])) {
+                header("Location: details_fetch.php");
+            }
+        ?>
+    </form>
 </body>
 </html>
