@@ -1,37 +1,9 @@
 <html lang="en">
 <head>
     <title>Student Details</title>
-    <link rel="stylesheet" href="../css/loginpage.css">
+    <link rel="stylesheet" href="css/loginpage.css">
 </head>
 <body>
-    <?php
-        $userNameErr = $passwordError = "";
-        $userName = $password = ""; 
-        if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            if (empty($_POST["userName"])) {
-                $userNameErr = "Username is required";
-            } else {
-                $userName = test_input($_POST["userName"]);
-                if (!preg_match("/^[a-zA-Z-' ]*$/",$userName)) {
-                  $userNameErr = "Only letters and white space allowed";
-                }
-            }
-            if (empty($_POST["password"])) {
-                $nameErr = "Password is required";
-            } else {
-                $password = test_input($_POST["password"]);
-                if (!preg_match("/^[a-zA-Z-' ]*$/",$password)) {
-                  $passwordErr = "Only letters allowed";
-                }
-            }
-            function test_input($data) {
-                $data = trim($data);
-                $data = stripslashes($data);
-                $data = htmlspecialchars($data);
-                return $data;
-            }
-        } 
-    ?>
     <div class="main">
         <div class="container">
             <div class="title">
