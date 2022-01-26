@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>Student Details</title>
-    <link rel="stylesheet" href="css/student_data.css">
+    <link rel="stylesheet" href="../css/student_data.css">
 </head>
 <body>
     <?php 

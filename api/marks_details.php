@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/marks_details.css">
+    <link rel="stylesheet" href="../css/marks_details.css">
     <title>Total Marks</title>
 </head>
 <body>

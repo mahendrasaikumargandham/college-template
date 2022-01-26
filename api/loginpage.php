@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
     <title>Student Details</title>
-    <link rel="stylesheet" href="css/loginpage.css">
+    <link rel="stylesheet" href="../css/loginpage.css">
 </head>
 <body>
     <?php
